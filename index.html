@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	
+	<style>
+	body{margin:0 auto;width:1600px;background:#fff;font-family:"microsoft yahei";}	
+		
+	header{
+		padding-top:200px;
+		box-sizing:border-box;
+		height:990px;
+		text-align:center;
+		background:url(img/bg1.png);
+	}
+	header *{box-sizing: border-box;}
+	header h2{line-height:72px;font-size:62px;}
+	header h2,header h5,section:last-of-type h3{color:#FFF;margin:0;}
+	
+	header h2 + p{margin-top:75px;font-size:20px;line-height:32px}
+	header p,section:last-of-type p{color:rgba(255,255,255,0.7);}
+	
+	header form{margin-top:100px;height:250px;width:970px;
+	box-sizing: border-box;margin-left:300px;padding:50px;}
+	header form h5{letter-spacing:2px;}
+	
+	header form input:focus{color:#fff}
+	
+	header form input{padding:20px;width:290px;margin-right:10px;background:none;color:rgba(255,255,255,0.7);margin-top:30px;}
+	
+	 button{padding:20px 30px 20px;background:none;color:white;text-transform: uppercase;margin-top:30px}
+	
+	 input, button,header form{
+		border:1px solid rgba(255,255,255,0.2);
+		border-radius:2px;
+	}
+	button:hover{color:#141414;background:white;cursor: pointer;}
+	
+
+	section:nth-of-type(1){
+		height:710px;
+		text-align:center;
+	}
+	
+	section:first-of-type>p{line-height:28px;font-size:14px;
+	margin-top:75px;letter-spacing: 1px;text-transform: uppercase;}
+	
+	 h3{line-height:52px;font-size:42px;font-weight:normal}
+	
+	section:first-of-type table{text-align:left;margin: 0 auto;border-spacing: 160px 70px;}
+	/*section:first-of-type p,section:first-of-type span{overflow:hidden}*/
+	section:first-of-type div{overflow: hidden;}
+	section:first-of-type img{float:left;margin-right:30px;}
+	
+	section:first-of-type span{line-height:32px;font-size:20px;}
+	section:first-of-type table p,article p,.rightCont>p{font-size:16px;line-height:26px;color:rgba(20,20,20,0.7)}
+	
+	section:last-of-type div{display:inline-block;margin:180px 120px 180px 300px;}
+	section:last-of-type div p{line-height:28px;font-size:18px}
+	section:last-of-type img{position:relative;float:right;top:calc(50% - 270px);/*vertical-align:top;*/}
+	
+	
+	section:nth-of-type(2){
+		height:800px;
+		background:url(img/bg2.png);
+	}
+
+	article{border-bottom:1px solid gainsboro;}
+
+	article:nth-of-type(1){
+		height:580px;
+		text-align: center;
+	}	
+	article:nth-of-type(1) h3{margin:100px auto;}
+	article ul{display:flex;width:62.5%;padding:0;margin:0 auto;justify-content: space-around;}
+	article ul li{display:block;}
+	
+	article:nth-of-type(2){height:1000px;}
+	
+	article:nth-of-type(2) h4{font-size:20px;line-height:32px;color:#141414}
+	 .inlineBlock{display:inline-block;vertical-align:top}	
+	.line{width:62.5%;margin:0 auto}
+	.line1{margin-top:110px;margin-bottom:75px;}
+	
+	.line1 img{margin-right:100px;}
+	.line2 img{margin-left:80px}
+	
+	article:nth-of-type(3){
+		height:1080px;
+		text-align:center
+	}
+	article:nth-of-type(3) h3{margin-top:110px;margin-bottom:40px}
+	article:nth-of-type(3) p{margin-bottom:30px}
+
+	article:nth-of-type(3) ul{flex-wrap:wrap;width:65%;}
+	article:nth-of-type(3) li{flex-basis:49%}
+	
+	.relative{position:relative}
+	.bg{position:absolute;background:rgba(0.2,0.2,0.2,0.65);display: none;left:0;top:0;width:100%;height:100%}
+	.cont{position:absolute;left:calc(50% - 120px);top:calc(50% - 80px);display:none;}
+	.cont img{border:2px solid #eee;opacity: 0.2;border-radius:50%;margin-right:30px;margin-left:25px;padding:5px}
+	.cont p:first-child{font-size:24px; line-height:32px;color:#fff;}
+	.cont p:last-of-type{font-size:16px;line-height:28px;color:#fff;opacity:0.4}
+	.relative:hover .bg{display:block;}
+	.relative:hover .cont{display:block;/*cursor:url(img/基础-07_0005s_0001s_0000s_0000_Hand-Icon.png)*/}
+	
+	
+	aside{height:700px;}
+	
+	aside form{border:1px solid #DCDCDC;width:470px;height:610px;
+	margin:70px 125px 70px 285px;text-align: center;float:left;}
+	aside form *{box-sizing: border-box;}
+	aside form h4{margin:40px 0;letter-spacing: 2px;line-height:28px;font-size:20px;font-weight:normal}
+	aside input,aside textarea{width:75%;margin:30px;padding-left:20px}
+	aside input{height:40px;border:1px solid rgba(20,20,20,0.2)}
+	aside textarea{height:120px}
+	aside input[type="button"]{padding:0;background:#141414;color:#fff;}
+	
+	.Line{margin-top:40px;}
+
+	.rightCont{position:relative;top:calc(50% - 220px);display:inline-block}
+	.rightCont>p{margin-bottom:80px}
+	.rightCont img{float:left;margin-right:15px}
+	
+	footer{
+		width:100%;
+		height:400px;
+		background:#141414;
+		color:rgba(255,255,255,0.3);
+		display:flex;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	footer ul{padding-top:70px;flex-basis:20%;padding-left:0}
+	footer ul:last-of-type img{margin-right:20px}
+	footer ul li:first-child{text-transform: uppercase;color:#fff}
+	footer ul li:not(:first-child):hover{color:#fff;cursor: pointer;}
+	footer ul li{display:block;margin-bottom:30px}
+	
+	</style>
+	
+	<body>
+		<header>
+			<h2>Hello World</h2>
+			<p>China is speeding up strategic plan,standards,traffic rules,laws and regulations</br>
+				on accident-incurred liabilities for its smart car industry.Economic information</br>
+				Daily reported Thursday
+			</p>
+			<form>
+				<h5>CREATE YOUR ACCOUNT</h5>
+				<p>IT IS ABSOLUTELY FREE</p>
+				<input type="email" placeholder="Create your email">
+				<input type="password" placeholder="Create your password">
+				<button type="button">sign up</button>
+			</form>
+		</header>
+		
+		<section>
+			<p>boatloads of awesome</p>
+			<h3>Ready-made,customizable,HTML</br>
+				landing page sections
+			</h3>
+			
+			<table>
+				<tr>
+					<td><img src="img/基础-07_0001s_0001s_0000s_0000_Iphone-Icon.png">
+						<div>
+						<span>Mobile First</span>
+						<p>All modulz are built mobile-first for maximum</br>
+							device compatibility.
+						</p>
+						</div>
+					</td>
+					<td>
+						<img src="img/基础-07_0001s_0001s_0002s_0001_Check-Icon.png">
+						<div>
+						<span>Accessibility</span>
+						<p>Support for IE8,mobile and tablet devices</br>
+							screenreaders and color bind.
+						</p>
+						</div>
+
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="img/基础-07_0001s_0001s_0001s_0000_Pencil-Icon.png">
+						<div>
+						<span>Fluid Typography</span>
+						<p>On different screen sizes.fonts automagically </br>scale with the viewpoint.</p>
+						</div>
+					</td>
+					<td>
+						<img src="img/基础-07_0001s_0001s_0003s_0000_Settings-Icon.png">
+						<div>
+						<span>Customization</span>
+						<p>Make any design your own using the Style </br>
+							Editor.Personalize fonts colors and layouts to </br>
+							create the custom look you want.
+						</p>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</section>
+		
+		<section>
+			<div>
+				<h3>Supportive policies </br>
+					for China's smart </br>car
+				</h3>
+				<p>China will come up with its own smart car </br>
+					standards,traffic rules,laws and regulations </br>
+					relating to safety,according to the China</br>
+					industry lnnovation Alliance for the intell-<br>
+					gent and Connected Vehicles.
+				</p>
+				<button type="button">check out features</button>
+				<button type="button">try product for free</button>
+			</div>
+			<img src="img/基础-07_0002s_0002s_0002_Screen.png">
+		</section>
+		
+		<article>
+			<h3>Try Our Awesome Products</h3>
+			<ul>
+				<li><img src="img/基础-07_0003s_0001s_0000s_0000_Singleton.png">
+					<p>Li Jun a China Academy of Engi-</br>
+						neering academician and also </br>
+						director of the alliance's experts'</br>
+						committee said that China will </br>
+						also launch design guidance for </br>
+						smart cars.smart map architec-</br>
+						ture and standards for test</br>
+						grounds
+					</p>
+				</li>
+				<li>
+					<img src="img/基础-07_0003s_0001s_0001s_0000_Hero.png">
+					<p>Li said the smart car industry is </br>
+						able to enlarge the current car </br>
+						industry by 1 trillion yuan($158.15</br>
+						billion) and also able to boost fast </br>
+						development in 5G.internet of </br>
+						cars.big data,artificial intelligence</br>
+						and new-energy vehicles.
+					</p>
+				</li>
+				<li>
+					<img src="img/基础-07_0003s_0001s_0002s_0000_Portland.png">
+					<p>
+						Zhang Junyi, a partner with NIO </br>
+						Capital,said that the smart car is </br>
+						the trend for the car industry and</br>
+						China's auto sector will usher in a</br>
+						new key development stage with </br>
+						the improvement of infrastructure,</br>
+						technology,policies and laws.
+					</p>
+				</li>
+			</ul>
+		</article>
+
+		<article>
+			<div class="line line1">
+			<img src="img/基础-07_31.png">
+			<div class="inlineBlock">
+				<h4>Learn how to improve your </br>personal business</h4>
+					<p>Li Jun a China Academy of Engi
+						neering</br> academician and also 
+						director of the </br>alliance's experts'
+						committee said that</br> China will 
+						also launch design guidance </br>for 
+						smart cars.smart map architec
+						ture </br>and standards for test
+						grounds
+					</p>
+			</div>
+			</div>
+			<div class="line line2">
+			<div class="inlineBlock">
+				<h4>choose between two beautifully </br>designed color schemes</h4>
+				<p>China will come up with its own smart</br> car 
+					standards,traffic rules,laws and reg-</br>ulations 
+					relating to safety,according to </br>the China
+					industry lnnovation Alliance </br>for the intell
+					gent and Connected</br> Vehicles.
+				</p>
+			</div>
+			<img src="img/bird.png">
+			</div>
+		</article>
+		
+		<article>
+			<h3>Our Awesome Crew</h3>
+			<p>Our unique online teaching styles makes learning easy for everyone.Whether you</br>
+				are trying to land a new job,brush up on your skills .
+			</p>
+			<ul>
+				<li class="relative"><img src="img/基础-07_0005s_0001s_0000s_0002_张思远大.png" >
+				<div class="bg"></div>
+					<div class="cont">
+						<p>Ethan Dutton</p>
+						<p>Senior Visual Designer</p>
+						<img src="img/基础-07_0005s_0001s_0000s_0001s_0000s_0000_Facebook-Icon.png">
+						<img src="img/基础-07_0005s_0001s_0000s_0001s_0001s_0000_Twitter-Icon.png">
+						<img src="img/基础-07_0005s_0001s_0000s_0001s_0002s_0000_Instagram-Icon.png">
+					</div>
+				</li>
+				<li><img src="img/基础-07_0005s_0001s_0001s_0000_2.png"></li>
+				<li><img src="img/基础-07_43.png"></li>
+				<li><img src="img/基础-07_0005s_0001s_0003s_0000_沈大师大_meitu_3.png"></li>
+			</ul>
+		</article>
+		
+		<aside>
+			<form>
+				<h4>Feel free to write us</h4>
+				<input type="email" placeholder="E-mail">
+				<input type="text" placeholder="Subject">
+				<textarea placeholder="Message"></textarea>
+				<input type="button" value="SEND">
+			</form>
+			
+			<div class="rightCont">
+				<h3>Contacts</h3>
+				<p>Make any design your own using the Style</br>
+					Editior.Personalize fonts,colors and layouts to</br>
+					create the custom look you want .
+				</p>
+				<div class="Line">
+				<img src="img/基础-07_0006s_0001s_0002s_0000_Map-Icon.png">
+				<p>360 King Street </br>Feastrval Trevose,PA 19057 </p>
+				</div>
+				<div class="Line">
+					<img src="img/基础-07_0006s_0001s_0001s_0000_Phone-Icon.png">
+					<p>(755)564-84-12</p>
+				</div>
+				<div class="Line">
+					<img src="img/基础-07_0006s_0001s_0000s_0000_Mail-Icon.png">
+					<p>youname@mail.com</p>
+				</div>
+			</div>
+			
+		</aside>
+		<footer>
+			<ul>
+				<li>Learn more</li>
+				<li>How it works</li>
+				<li>Meeting tools</li>
+				<li>Live streaming</li>
+				<li>Contact method</li>
+			</ul>
+			<ul>
+				<li>about us</li>
+				<li>About us</li>
+				<li>Features</li>
+				<li>Privacy police</li>
+				<li>Terms&amp;Conditions</li>
+			</ul>
+			<ul>
+				<li>support</li>
+				<li>FAQ</li>
+				<li>Contact us</li>
+				<li>Live chat</li>
+				<li>Phone call</li>
+			</ul>
+			<ul>
+				<li>enjoy your life</li>
+				<li>Great web UI kit for designer.</br>
+					freelancers or business.
+				</li>
+				<li><img src="img/基础-07_0007s_0001s_0000s_0000_Twitter-Icon.png">
+					<img src="img/基础-07_0007s_0001s_0000s_0001_Facebook-Icon.png">
+					<img src="img/基础-07_0007s_0001s_0000s_0002_Google-Icon.png">
+					<img src="img/基础-07_0007s_0001s_0000s_0003_Tumbler-Icon.png">
+					<img src="img/基础-07_0007s_0001s_0000s_0004_Pinterest-Icon.png">
+					<img src="img/基础-07_0007s_0001s_0000s_0005_LinkedIn-Icon.png">
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>
